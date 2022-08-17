@@ -14,7 +14,7 @@ ALTER TABLE animals ADD ID SERIAL PRIMARY KEY;
 UPDATE animals SET Species='unspecified';
 UPDATE animals SET Species= 'digimon' WHERE name like '%mon';
 UPDATE animals SET Species= 'pokemom' WHERE Species='unspecified';
-
+ALTER TABLE animals ADD COLUMN species varchar(100);
 
 DELETE * FROM animals;
 BEGIN;
