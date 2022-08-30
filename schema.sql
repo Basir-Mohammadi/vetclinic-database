@@ -16,7 +16,8 @@ CREATE TABLE animals (
 CREATE TABLE owners (
     id int SERIAL PRIMARY KEY NOT NULL,
     full_name varchar(100) NOT NULL,
-    age int NOT NULL
+    age int NOT NULL,
+    email varchar(120)
 );
 
 CREATE TABLE species(
@@ -53,3 +54,6 @@ CREATE TABLE visits (
     FOREIGN KEY(animals_id) REFERENCES animals(id),
     FOREIGN KEY(vets_id) REFERENCES vets(id)
 );
+
+INSERT INTO visits (animals_id, vets_id, date_of_visit) SELECT * FROM (SELECT id FROM animals) animal_ids, (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+

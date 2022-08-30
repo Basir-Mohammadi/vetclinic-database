@@ -127,3 +127,10 @@ SELECT animals.name,date_of_birth,escape_attempts,neutered,weight_kg,species.nam
     JOIN visits ON animals.id  = visits.animals_id
     JOIN vets ON visits.vets_id = vets.id  WHERE vets.name = 'Maisy Smith'
     GROUP BY species.name ORDER BY number_of_visits DESC LIMIT 1;
+
+
+-- database performance audit
+
+explain analyze SELECT COUNT(*) FROM visits where animals_id = 4;
+SELECT COUNT(*) FROM visits where animals_id = 4;
+SELECT * FROM visits where vets_id = 2;
