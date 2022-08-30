@@ -23,6 +23,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 🤝 Contributing
 
+👤 **Henry Varflay Singbeh**
+
+- GitHub: [@githubhandle](https://github.com/henrycode460)
+- Twitter: [@twitterhandle](https://twitter.com/460code)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
