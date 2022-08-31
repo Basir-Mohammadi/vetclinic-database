@@ -15,7 +15,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Authors
 
-👤 **Author1**
+👤 **Basir Mohammadi**
 
 - GitHub: [@githubhandle](https://github.com/Basir-Mohammadi)
 - Twitter: [@twitterhandle](https://twitter.com/basirahmad1312)
